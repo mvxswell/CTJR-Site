@@ -21,20 +21,30 @@
             align-items: center;
             position: relative;
         }
+        .button-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
         .arcade-button {
             position: absolute;
-            top: 5%; /* Adjust this to position over "Enter Arcade" */
-            left: 5%;
+            top: 60%; /* Adjust to position over "Enter Arcade" */
+            left: 50%;
             transform: translate(-50%, -50%);
-            width: 300px; /* Adjust size of clickable area */
-            height: 100px; /* Adjust size of clickable area */
-            background: rgba(0, 0, 0, 0); /* Fully transparent */
-            border: none;
+            width: 250px; /* Adjust size of clickable area */
+            height: 80px; /* Adjust size of clickable area */
+            background: rgba(255, 255, 255, 0); /* Fully transparent */
+            border: 2px solid transparent;
             cursor: pointer;
+        }
+        .arcade-button:hover {
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Optional: Visible outline on hover */
         }
     </style>
 </head>
 <body>
-    <a href="arcade.html" class="arcade-button"></a>
+    <div class="button-container">
+        <a href="arcade.html" class="arcade-button"></a>
+    </div>
 </body>
 </html>
