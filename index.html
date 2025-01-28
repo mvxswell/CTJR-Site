@@ -18,18 +18,12 @@
             background: url('https://raw.githubusercontent.com/mvxswell/CTJR-Site/main/assets/images/ctjr-landing-page.jpg') no-repeat center center fixed;
             background-size: cover;
         }
-        .button-container {
-            position: fixed; /* Ensures it stays over the image */
-            width: 100%;
-            height: 100%;
-        }
         .arcade-button {
             position: absolute;
-            top:  50%; /* Lowered down to align with "Enter Arcade" */
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 300px; /* Adjust width */
-            height: 100px; /* Adjust height */
+            top: 85%; /* Moves button lower */
+            left: 45%; /* Adjust left to center manually */
+            width: 300px; /* Adjust size */
+            height: 100px;
             background: rgba(255, 0, 0, 0.5); /* 🔴 TEMPORARY Red box for visibility */
             border: 2px solid white;
             cursor: pointer;
@@ -39,6 +33,7 @@
             font-size: 20px;
             color: white;
             font-weight: bold;
+            text-decoration: none;
         }
         .arcade-button:hover {
             border: 2px solid rgba(255, 255, 255, 0.8);
@@ -46,8 +41,6 @@
     </style>
 </head>
 <body>
-    <div class="button-container">
-        <a href="arcade.html" class="arcade-button">ENTER</a> <!-- Button lowered to correct position -->
-    </div>
+    <a href="arcade.html" class="arcade-button">ENTER</a> <!-- Button is now correctly positioned -->
 </body>
 </html>
