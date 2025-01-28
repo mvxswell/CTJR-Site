@@ -20,24 +20,25 @@
         }
         .button-container {
             position: fixed; /* Ensures it stays over the image */
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
         }
         .arcade-button {
             position: absolute;
-            top: 50%; /* Adjust this to position it over "Enter Arcade" */
+            top: 75%; /* Lowered down to align with "Enter Arcade" */
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 500px; /* Adjust width */
+            width: 300px; /* Adjust width */
             height: 100px; /* Adjust height */
-            background: rgba(255, 0, 0, 0.5); /* 🔴 TEMPORARY Red box for positioning */
+            background: rgba(255, 0, 0, 0.5); /* 🔴 TEMPORARY Red box for visibility */
             border: 2px solid white;
             cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
         }
         .arcade-button:hover {
             border: 2px solid rgba(255, 255, 255, 0.8);
@@ -46,7 +47,7 @@
 </head>
 <body>
     <div class="button-container">
-        <a href="arcade.html" class="arcade-button">ENTER</a> <!-- Added text so you can see it -->
+        <a href="arcade.html" class="arcade-button">ENTER</a> <!-- Button lowered to correct position -->
     </div>
 </body>
 </html>
