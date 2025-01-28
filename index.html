@@ -16,10 +16,25 @@
         body {
             background: url('https://raw.githubusercontent.com/mvxswell/CTJR-Site/main/assets/images/ctjr-landing-page.jpg') no-repeat center center fixed;
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .arcade-button {
+            position: absolute;
+            top: 55%; /* Adjust this to position over "Enter Arcade" */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px; /* Adjust size of clickable area */
+            height: 100px; /* Adjust size of clickable area */
+            background: rgba(0, 0, 0, 0); /* Fully transparent */
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <!-- Removed heading and button -->
+    <a href="arcade.html" class="arcade-button"></a>
 </body>
 </html>
